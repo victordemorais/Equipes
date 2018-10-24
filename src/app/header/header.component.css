@@ -1,0 +1,35 @@
+h1 {
+  background: #f0f1f3;
+  color: #8b9faa;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 70px 40px;
+  border-bottom: 1px solid #ccc;
+}
+
+.menu ul {
+  position: absolute;
+  margin-top: -48px;
+  margin-left: 30px;
+  font-size: 13px;
+}
+
+.menu ul li {
+
+  cursor: pointer;
+  padding: 12px;
+  margin: 10px 10px;
+  display: inline-block;
+  text-transform: uppercase
+}
+
+.menu ul li:hover {
+  background: #ccc;
+}
+
+.selected {
+  background: #f4f5f7;
+  border-top: 1px solid #89c06d;
+  color:#89c06d;
+}
