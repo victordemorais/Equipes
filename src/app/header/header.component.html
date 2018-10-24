@@ -2,10 +2,13 @@
   Setup
 </h1>
 <div class="menu">
-    <ul>
-      <li class="selected">Minha Equipe</li>
-      <li>Tab Item</li>
-      <li>Tab Item</li>
-      <li>Tab Item</li>
-    </ul>
+  <ul>
+    <li class="selected">Minha Equipe</li>
+    <li>Protcolo</li>
+    <li>Tab Item</li>
+    <li>Tab Item</li>
+  </ul>
+  <div class="users" *ngFor="let user of users">
+    <eqp-users img="{{user.img}}" nome="{{user.nome}}" email="{{user.email}}"></eqp-users>
+  </div>
 </div>

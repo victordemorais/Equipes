@@ -1,0 +1,38 @@
+.user {
+  padding: 30px;
+  background: #f7f9f8;
+  display: block;
+  width: 23.7%;
+  height: 210px;
+  float: left;
+  border: 1px solid #ccc;
+  margin-left: 1%;
+  text-align: center;
+  margin-top: 1%;
+}
+
+
+.user:nth-child(3n+0) {
+  margin-right: 1%;
+}
+
+.imguser {
+  width: 100%;
+}
+
+.user img {
+  width: 90px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+}
+
+.user .name {
+  margin-top: 15px;
+  color: #666666;
+  font-size:1.2em;
+}
+
+.user .email {
+ margin-top:8px;
+  color: #acb7b9;
+}
