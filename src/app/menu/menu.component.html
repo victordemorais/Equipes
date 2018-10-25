@@ -1,0 +1,31 @@
+<div class="menu">
+  <label class="searching">
+    <i class="fas fa-search"></i>
+    <input type="text" name="search" class="search">
+
+  </label>
+
+  <div class="menu-right">
+    <span>Visualizar:</span>
+    <input type="button" name="freelas" value="freelas" class="selected">
+    <input type="button" name="freelas" value="usuarios">
+
+    <div class="newUser">
+      <input type="button" value="Novo Usuario" (click)="toggleMenu()">
+    </div>
+  </div>
+
+</div>
+
+<div class="addUser" [@slideInOut]="menuState">
+  <div class="header">
+    <h1>Novo Membro</h1>
+    <button (click)="toggleMenu()" class="notButton"><i class="far fa-window-close"></i></button>
+
+  </div>
+  <div class="form" [formGroup]="formulario">
+    <input type="text" formControlName="nome" class="search" placeholder="Nome">
+    <input type="text" formControlName="email" class="search" placeholder="E-mail">
+    <input type="button" class="addButton" name="button" value="Criar novo membro" (click)="addUser()">
+  </div>
+</div>

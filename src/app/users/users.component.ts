@@ -9,7 +9,8 @@ export class UsersComponent {
   @Input() img: string;
   @Input() email: string;
   @Input() nome: string;
-  constructor() { }
-  
 
+  constructor() { }
+
+  
 }

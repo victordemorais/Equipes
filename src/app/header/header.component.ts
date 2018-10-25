@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Users } from '../users/users.model';
+import { UsersService } from '../users/users.services';
 
 @Component({
   selector: 'eqp-header',
@@ -8,14 +9,16 @@ import { Users } from '../users/users.model';
 })
 export class HeaderComponent implements OnInit {
 
-  users: Users[] = [
-    { nome: 'Victor', email: 'victordemorais@hotmail.com.br', img: 'assets/imgs/user-girl.png' },
-    { nome: 'Victor', email: 'victordemorais@hotmail.com.br', img: 'assets/imgs/user-girl.png' }
-  ];
+  users: Users[];
+  
 
-  constructor() { }
+  constructor(_usersServices: UsersService) {
+    this.users = _usersServices.getUsers();
+
+  }
 
   ngOnInit() {
+   
   }
 
 }

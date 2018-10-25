@@ -1,9 +1,8 @@
 <div class="user">
   <div class="imguser">
-    <img [src]="img" alt="aline">
+    <img [src]="img != null ? 'assets/imgs/user-girl.png' : img" alt="aline">
   </div>
   <p class="name">{{nome}}<br>
   </p>
   <p class="email">{{email}}</p>
-
 </div>
